@@ -102,7 +102,7 @@ const LoginFn = async () => {
   align-items: center;
   width: 400px;
   height: 300px;
-  border-radius: 39px;
+  border-radius: 38px;
   background-color: #f0f0f0;
   /* filter: alpha(Opacity=60); */
   /* -moz-opacity: 0.6; */
