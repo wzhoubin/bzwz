@@ -70,6 +70,7 @@ const LoginFn = async () => {
   if (res.data.code == 1) {
     UserData.username = form.value.username;
     UserData.password = form.value.password;
+
     ElMessage({
       message: '登录成功',
       type: 'success'
@@ -101,7 +102,7 @@ const LoginFn = async () => {
   align-items: center;
   width: 400px;
   height: 300px;
-  border-radius: 38px;
+  border-radius: 39px;
   background-color: #f0f0f0;
   /* filter: alpha(Opacity=60); */
   /* -moz-opacity: 0.6; */
