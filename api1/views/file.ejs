@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form id="uploadForm" action="/testApi/file" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" />
+      <button type="submit">提交</button>
+    </form> -->
+    <form action="/testApi/file" method="post" enctype="multipart/form-data">
+      <label for="name">姓名：</label>
+      <input type="file" id="name" name="name" /><br /><br />
+      <input type="submit" value="提交" />
+    </form>
+    <!-- <script>
+      const form = document.getElementById("uploadForm");
+      const imageUpload = document.getElementById("imageUpload");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // 阻止表单默认提交行为
+        const file = imageUpload; // 获取选择的文件
+        const formData = new FormData(); // 创建一个FormData对象
+        formData.append("image", file); // 添加文件到FormData对象中
+        fetch("/testApi/file", {
+          // 发送请求到后端上传接口
+          method: "POST",
+          body: formData
+        })
+          .then((response) => response.json()) // 解析响应为JSON
+          .then((data) => console.log(data)) // 打印响应数据
+          .catch((error) => console.error(error)); // 捕获并打印错误
+      });
+    </script> -->
+  </body>
+</html>

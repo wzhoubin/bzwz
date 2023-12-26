@@ -1,0 +1,31 @@
+:root {
+  --color: #e6a23c;
+  --background: #fff;
+}
+.picture-all {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* width: 100%; */
+}
+
+.picture-img {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  margin-bottom: 10px;
+  /* justify-content: center; */
+}
+
+.picture-img :not(:first-child) {
+  margin-left: 10px;
+}
+
+.picture-font {
+  margin: 10px 0;
+}
